@@ -14,6 +14,10 @@
 		D85662281CB9DAF7005C2889 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D85662261CB9DAF7005C2889 /* LaunchScreen.storyboard */; };
 		D85662331CB9DAF7005C2889 /* CatKeyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85662321CB9DAF7005C2889 /* CatKeyTests.swift */; };
 		D856623E1CB9DAF7005C2889 /* CatKeyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D856623D1CB9DAF7005C2889 /* CatKeyUITests.swift */; };
+		D85662521CB9DBA1005C2889 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85662511CB9DBA1005C2889 /* KeyboardViewController.swift */; };
+		D85662561CB9DBA1005C2889 /* Cat Keyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D856624F1CB9DBA1005C2889 /* Cat Keyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D856625C1CB9DC77005C2889 /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = D856625B1CB9DC77005C2889 /* View.xib */; };
+		D856625E1CB9E329005C2889 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = D856625D1CB9E329005C2889 /* Array.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +35,28 @@
 			remoteGlobalIDString = D85662191CB9DAF7005C2889;
 			remoteInfo = CatKey;
 		};
+		D85662541CB9DBA1005C2889 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D85662121CB9DAF7005C2889 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D856624E1CB9DBA1005C2889;
+			remoteInfo = "Cat Keyboard";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D856625A1CB9DBA1005C2889 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D85662561CB9DBA1005C2889 /* Cat Keyboard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D856621A1CB9DAF7005C2889 /* CatKey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatKey.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +72,11 @@
 		D85662391CB9DAF7005C2889 /* CatKeyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatKeyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D856623D1CB9DAF7005C2889 /* CatKeyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatKeyUITests.swift; sourceTree = "<group>"; };
 		D856623F1CB9DAF7005C2889 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D856624F1CB9DBA1005C2889 /* Cat Keyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Cat Keyboard.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D85662511CB9DBA1005C2889 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		D85662531CB9DBA1005C2889 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D856625B1CB9DC77005C2889 /* View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
+		D856625D1CB9E329005C2889 /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +101,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D856624C1CB9DBA1005C2889 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -80,6 +117,7 @@
 				D856621C1CB9DAF7005C2889 /* CatKey */,
 				D85662311CB9DAF7005C2889 /* CatKeyTests */,
 				D856623C1CB9DAF7005C2889 /* CatKeyUITests */,
+				D85662501CB9DBA1005C2889 /* Cat Keyboard */,
 				D856621B1CB9DAF7005C2889 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +128,7 @@
 				D856621A1CB9DAF7005C2889 /* CatKey.app */,
 				D856622E1CB9DAF7005C2889 /* CatKeyTests.xctest */,
 				D85662391CB9DAF7005C2889 /* CatKeyUITests.xctest */,
+				D856624F1CB9DBA1005C2889 /* Cat Keyboard.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,6 +164,17 @@
 			path = CatKeyUITests;
 			sourceTree = "<group>";
 		};
+		D85662501CB9DBA1005C2889 /* Cat Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				D85662511CB9DBA1005C2889 /* KeyboardViewController.swift */,
+				D856625D1CB9E329005C2889 /* Array.swift */,
+				D856625B1CB9DC77005C2889 /* View.xib */,
+				D85662531CB9DBA1005C2889 /* Info.plist */,
+			);
+			path = "Cat Keyboard";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,10 +185,12 @@
 				D85662161CB9DAF7005C2889 /* Sources */,
 				D85662171CB9DAF7005C2889 /* Frameworks */,
 				D85662181CB9DAF7005C2889 /* Resources */,
+				D856625A1CB9DBA1005C2889 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D85662551CB9DBA1005C2889 /* PBXTargetDependency */,
 			);
 			name = CatKey;
 			productName = CatKey;
@@ -181,6 +233,23 @@
 			productReference = D85662391CB9DAF7005C2889 /* CatKeyUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		D856624E1CB9DBA1005C2889 /* Cat Keyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D85662571CB9DBA1005C2889 /* Build configuration list for PBXNativeTarget "Cat Keyboard" */;
+			buildPhases = (
+				D856624B1CB9DBA1005C2889 /* Sources */,
+				D856624C1CB9DBA1005C2889 /* Frameworks */,
+				D856624D1CB9DBA1005C2889 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Cat Keyboard";
+			productName = "Cat Keyboard";
+			productReference = D856624F1CB9DBA1005C2889 /* Cat Keyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -193,6 +262,7 @@
 				TargetAttributes = {
 					D85662191CB9DAF7005C2889 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 6VQPSK4L7D;
 					};
 					D856622D1CB9DAF7005C2889 = {
 						CreatedOnToolsVersion = 7.3;
@@ -201,6 +271,10 @@
 					D85662381CB9DAF7005C2889 = {
 						CreatedOnToolsVersion = 7.3;
 						TestTargetID = D85662191CB9DAF7005C2889;
+					};
+					D856624E1CB9DBA1005C2889 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 6VQPSK4L7D;
 					};
 				};
 			};
@@ -220,6 +294,7 @@
 				D85662191CB9DAF7005C2889 /* CatKey */,
 				D856622D1CB9DAF7005C2889 /* CatKeyTests */,
 				D85662381CB9DAF7005C2889 /* CatKeyUITests */,
+				D856624E1CB9DBA1005C2889 /* Cat Keyboard */,
 			);
 		};
 /* End PBXProject section */
@@ -246,6 +321,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D856624D1CB9DBA1005C2889 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D856625C1CB9DC77005C2889 /* View.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +360,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D856624B1CB9DBA1005C2889 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D85662521CB9DBA1005C2889 /* KeyboardViewController.swift in Sources */,
+				D856625E1CB9E329005C2889 /* Array.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -289,6 +381,11 @@
 			isa = PBXTargetDependency;
 			target = D85662191CB9DAF7005C2889 /* CatKey */;
 			targetProxy = D856623A1CB9DAF7005C2889 /* PBXContainerItemProxy */;
+		};
+		D85662551CB9DBA1005C2889 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D856624E1CB9DBA1005C2889 /* Cat Keyboard */;
+			targetProxy = D85662541CB9DBA1005C2889 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -399,10 +496,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = CatKey/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shirleyhe.CatKey;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -410,10 +511,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = CatKey/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shirleyhe.CatKey;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -463,6 +568,32 @@
 			};
 			name = Release;
 		};
+		D85662581CB9DBA1005C2889 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Cat Keyboard/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shirleyhe.CatKey.Cat-Keyboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D85662591CB9DBA1005C2889 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Cat Keyboard/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shirleyhe.CatKey.Cat-Keyboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -496,6 +627,14 @@
 			buildConfigurations = (
 				D85662491CB9DAF7005C2889 /* Debug */,
 				D856624A1CB9DAF7005C2889 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D85662571CB9DBA1005C2889 /* Build configuration list for PBXNativeTarget "Cat Keyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D85662581CB9DBA1005C2889 /* Debug */,
+				D85662591CB9DBA1005C2889 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

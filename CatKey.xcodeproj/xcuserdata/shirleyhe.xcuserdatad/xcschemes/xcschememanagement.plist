@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Cat Keyboard.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>CatKey.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -23,6 +28,11 @@
 			<true/>
 		</dict>
 		<key>D85662381CB9DAF7005C2889</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D856624E1CB9DBA1005C2889</key>
 		<dict>
 			<key>primary</key>
 			<true/>
