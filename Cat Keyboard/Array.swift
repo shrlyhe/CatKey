@@ -8,22 +8,22 @@
 
 import UIKit
 
-var quotesArray = ["Whatever the mind of man can conceive and believe, it can achieve. –Napoleon Hill",
+var quotesArray = ["Are you fur real??",
                    
-                   "Strive not to be a success, but rather to be of value. –Albert Einstein",
+                   "That's purrr-fect",
                    
-                   "I attribute my success to this: I never gave or took any excuse. –Florence Nightingale",
+                   "You've got to be kitten me",
                    
-                   "We become what we think about. –Earl Nightingale",
+                   "How paws-itively awesome",
                    
-                   "Life is 10% what happens to me and 90% of how I react to it. –Charles Swindoll",
+                   "I’m extremely well-read and litter-ate. My favorite book is The Great Catsby. I also don’t mind Of Mice And Men",
                    
-                   "The mind is everything. What you think you become. –Buddha",
+                   "Got a new purr coat and I’m feline good",
                    
-                   "Winning isn't everything, but wanting to win is. –Vince Lombardi",
+                   "Get meowta here!",
                    
-                   "Every child is an artist. The problem is how to remain an artist once he grows up. –Pablo Picasso",
+                   "The two best days of the week: Fryday and Caterday",
                    
-                   "Either you run the day, or the day runs you. –Jim Rohn",
+                   "Stop laughing right meow",
                    
-                   "Life shrinks or expands in proportion to one's courage. –Anais Nin"]
+                   "Cat puns freak meowt"]
