@@ -25,19 +25,29 @@ class KeyboardViewController: UIInputViewController {
     
     }
     
-    @IBAction func generateQuote() {
+    @IBAction func generatePun() {
         //random number generator
         let randomIndex = Int(arc4random_uniform(9))
         print(randomIndex)
         
         let proxy = textDocumentProxy as UITextDocumentProxy
-        proxy.insertText(quotesArray[randomIndex])
+        proxy.insertText(punArray[randomIndex])
+        
+    }
+    @IBAction func generateQuote() {
+        //random number generator
+        let randomIndex = Int(arc4random_uniform(1))
+        print(randomIndex)
+        
+        let proxy = textDocumentProxy as UITextDocumentProxy
+        proxy.insertText(quoteArray[randomIndex])
         
     }
     
-    @IBAction func hideKeyboard() {
-        dismissKeyboard()
-    }
+    
+//    @IBAction func hideKeyboard() {
+//        dismissKeyboard()
+//    }
     
     @IBAction func deleteText() {
         let proxy = textDocumentProxy as UITextDocumentProxy
@@ -55,6 +65,8 @@ class KeyboardViewController: UIInputViewController {
         view.addSubview(keyboardView)
         
     }
+
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

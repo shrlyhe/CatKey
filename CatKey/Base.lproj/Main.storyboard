@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -18,22 +17,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pZX-2h-eNK">
-                                <rect key="frame" x="74" y="199" width="453" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="IxE-5m-sqS"/>
-                                    <constraint firstAttribute="width" constant="453" id="SnX-cp-g3w"/>
-                                </constraints>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="TopLeft" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pZX-2h-eNK">
+                                <rect key="frame" x="73" y="150" width="465" height="189"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ULZ-ly-lfc">
+                                <rect key="frame" x="186" y="372" width="228" height="48"/>
+                                <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="0.79931294330000002" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="27"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.72928340517241375" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="pZX-2h-eNK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BHm-er-dSx"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="pZX-2h-eNK" secondAttribute="trailing" constant="53" id="K1Q-wM-L9e"/>
-                            <constraint firstItem="pZX-2h-eNK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="54" id="Mft-zy-xga"/>
-                            <constraint firstItem="pZX-2h-eNK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="179" id="vcD-d1-B1I"/>
+                            <constraint firstItem="ULZ-ly-lfc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lWd-WO-gIx"/>
                         </constraints>
                     </view>
                 </viewController>

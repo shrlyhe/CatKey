@@ -8,7 +8,7 @@
 
 import UIKit
 
-var quotesArray = ["Are you fur real??",
+var punArray = ["Are you fur real??",
                    
                    "That's purrr-fect",
                    
@@ -27,3 +27,5 @@ var quotesArray = ["Are you fur real??",
                    "Stop laughing right meow",
                    
                    "Cat puns freak meowt"]
+
+var quoteArray = ["You cannot live with a paw in each world. - Erin Hunter", "Meow means woof in cat.- George Carlin" ]

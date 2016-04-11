@@ -11,37 +11,49 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="216"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ZW-wB-EKd">
+                    <rect key="frame" x="42" y="23" width="287" height="48"/>
+                    <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="0.79931294326241131" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="27"/>
+                    <state key="normal" title="Cat Pun">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="generatePun" destination="-1" eventType="touchUpInside" id="Ylh-N9-CB3"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4aB-io-zAY">
+                    <rect key="frame" x="42" y="84" width="287" height="48"/>
+                    <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="0.80274822695035464" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="27"/>
+                    <state key="normal" title="Cat Quote">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="generateQuote" destination="-1" eventType="touchUpInside" id="r7q-ly-RV5"/>
+                    </connections>
+                </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nx3-DR-OB8">
-                    <rect key="frame" x="15" y="178" width="32" height="30"/>
-                    <state key="normal" title="Next"/>
+                    <rect key="frame" x="8" y="144" width="94" height="56"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                    <state key="normal" title="🌐"/>
                     <connections>
                         <action selector="nextKeyboard" destination="-1" eventType="touchUpInside" id="yxV-LO-oZ4"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i80-ts-NkC">
-                    <rect key="frame" x="171" y="178" width="32" height="30"/>
-                    <state key="normal" title="Hide"/>
-                    <connections>
-                        <action selector="hideKeyboard" destination="-1" eventType="touchUpInside" id="Ujy-a7-zGn"/>
-                    </connections>
-                </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y4w-eZ-dbk">
-                    <rect key="frame" x="322" y="178" width="45" height="30"/>
-                    <state key="normal" title="Delete"/>
+                    <rect key="frame" x="248" y="152" width="95" height="48"/>
+                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="27"/>
+                    <state key="normal" title="DEL">
+                        <color key="titleColor" red="0.30555264261744952" green="0.43928271812080538" blue="0.56485947986577179" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
                     <connections>
                         <action selector="deleteText" destination="-1" eventType="touchUpInside" id="jFQ-UG-f04"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ZW-wB-EKd">
-                    <rect key="frame" x="53" y="44" width="269" height="91"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                    <state key="normal" title="Generate Quote"/>
-                    <connections>
-                        <action selector="generateQuote" destination="-1" eventType="touchUpInside" id="QtI-Ay-W8a"/>
-                    </connections>
-                </button>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.87807513297872342" colorSpace="calibratedRGB"/>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="339.5" y="380"/>
